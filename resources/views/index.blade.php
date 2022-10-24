@@ -67,16 +67,19 @@
                 </tr>
             </thead>
             <tbody>
+              @foreach($data as $item)
+                
+              @endforeach
                 <tr>
-                    <td><?= $data['id_buku'] ?></td>
-                    <td><?= $data['penulis'] ?></td>
-                    <td><?= $data['tahun'] ?></td>
-                    <td><?= $data['judul'] ?></td>
-                    <td><?= $data['kota'] ?></td>
-                    <td><?= $data['penerbit'] ?></td>
-                    <td><img src="img/<?= $data['cover'] ?>" alt="" width="100px"  class="img img-thumbnail"></td>
-                    <td><?= $data['sinopsis'] ?></td>
-                    <td><?= $data['stock'] ?></td>
+                    <td></td>
+                    <td><?= $item['penulis'] ?></td>
+                    <td><?= $item['tahun'] ?></td>
+                    <td><?= $item['judul'] ?></td>
+                    <td><?= $item['kota'] ?></td>
+                    <td><?= $item['penerbit'] ?></td>
+                    <td><img src="img/<?= $item['cover'] ?>" alt="" width="100px"  class="img img-thumbnail"></td>
+                    <td><?= $item['sinopsis'] ?></td>
+                    <td><?= $item['stock'] ?></td>
                     <!-- <td><a href="edit.php?id="><button class="btn btn-primary">Edit</button></a></td>
                     <td><a href="delete.php?id="><button class="btn btn-danger">Delete</button></a></td> -->
                 </tr>

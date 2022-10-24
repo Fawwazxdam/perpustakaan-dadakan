@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\buku;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -19,7 +20,10 @@ Route::get('/', function () {
 });
 
 Route::get('index', function () {
-    return view('index');
+
+    $data = buku::all();
+
+    return view('index' ,compact('data'));
 });
 Auth::routes();
 
