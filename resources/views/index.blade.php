@@ -69,7 +69,7 @@
             <tbody>
               @foreach($data as $item)
                 
-              @endforeach
+
                 <tr>
                     <td></td>
                     <td><?= $item['penulis'] ?></td>
@@ -83,6 +83,7 @@
                     <!-- <td><a href="edit.php?id="><button class="btn btn-primary">Edit</button></a></td>
                     <td><a href="delete.php?id="><button class="btn btn-danger">Delete</button></a></td> -->
                 </tr>
+                @endforeach
             </tbody>
         </table>
       </div>
